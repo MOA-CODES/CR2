@@ -36,7 +36,7 @@ if(window.location.pathname == "/"){
         "url":`http://localhost:3000/api/users/${id}`,
         "method": "DELETE",
     }
-
+//gf
     if(confirm("Do you really want to delete this record?")){
         $.ajax(request).done(function(response){
             alert("Data Deleted succesfully")
