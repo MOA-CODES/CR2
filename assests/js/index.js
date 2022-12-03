@@ -46,3 +46,18 @@ if(window.location.pathname == "/"){
 
     })
 }
+
+$("#loginform").submit(function(event){
+    event.preventDefault();
+    var id = $("#please").val();
+    var password = $("#password").val();
+
+    if(id == "11" && password == "teacher"){
+        location.assign("http://localhost:3000")
+
+    }else if(id == 22 && password == "student"){
+        location.assign("http://localhost:3000/student")
+    }
+
+    alert(id2)
+})

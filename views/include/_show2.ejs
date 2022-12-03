@@ -1,0 +1,17 @@
+<%for (var i = 0; i<users.length; i++){%>
+
+    <!-- INCASE i come back and i am confused of where "users" originated from 
+        its from config.env , 
+        where i specified that "users" is the name of the database
+        (speculation) it also knows users because i specified the connection
+    -->
+    
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= users[i].name %></td>                            
+        <td><%= users[i].email %></td>
+        <td><%= users[i].gender %></td>
+        <td><%= users[i].status %></td>
+    </tr>
+    <%}%>
+    
